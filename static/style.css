@@ -1,7 +1,12 @@
 body {
-    /*background-image: url(http://wallpapercave.com/wp/kSQdCxM.jpg);*/
+    background-image: url("/static/space.jpg");
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+}
+
+.startsidan {
+  background-color: white;
+  background-image: none;
 }
 
 video {
@@ -14,14 +19,6 @@ video {
     z-index: -1000;
 }
 
-
-h2{
-  font-family: 'Open Sans', sans-serif;
-}
-
-h3{
-  font-family: 'Open Sans', sans-serif;
-}
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -67,13 +64,14 @@ nav a:hover {
 }
 
 .box1 {
-    background-color: #35c793;
+    background-color: #dfbf9f;
+    background-color: rgba(255, 204, 204, 0.5);
     text-align: center;
-    color: white;
+    color: #404040;
     margin-bottom: 40px;
     margin-left: 2px;
     margin-right: 2px;
-    opacity: 0.6;
+    opacity: 0.9;
     border-radius: 50%;
     height: 165px;
     width: 165px;
@@ -82,8 +80,8 @@ nav a:hover {
 }
 
 .box1:hover {
-    background-color: #ffbf80;
-    color: #804000;
+    background-color: #737373;
+    color: white;
     transition-property: background-color, color;
     transition-duration: 0.3s, 0.3s;
     transition-timing-function: linear; 
