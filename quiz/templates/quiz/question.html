@@ -30,16 +30,14 @@
 					<div class="col-md-3">
 					</div>
 					<div class="col-md-6 questions">
-						<h1>Quiz 1</h1>
-						<form>
-							<h3>Fråga 1</h3>
+						<h1>{{ quiz.name }}</h1>
+							<h3>{{ question_number }}. {{ question }}</h3>
 							<input type="radio" name="alt" id="alternativ1" value="">
-							<label for="alternativ1" class="check"><span></span> Alternativ 1</label><br>
+							<label for="alternativ1" class="check"><span></span> {{ answer1 }}</label><br>
 							<input type="radio" name="alt" id="alternativ2" value="">
-							<label for="alternativ2" class="check"><span></span> Alternativ 2</label><br>
+							<label for="alternativ2" class="check"><span></span> {{ answer2 }}</label><br>
 							<input type="radio" name="alt" id="alternativ3" value="">
-							<label for="alternativ3" class="check"><span></span>Alternativ 3</label>
-						</form>
+							<label for="alternativ3" class="check"><span></span>{{ answer3 }}</label>
 						<br>
 						<a href="results.html">
 						<button class="quizknapp quizknapp2" style="vertical-align: middle;"><span>RESULTAT</span></button></a>
