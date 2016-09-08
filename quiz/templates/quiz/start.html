@@ -57,6 +57,9 @@
 			<div class="col-md-3">
 		</div>
 		</div>
+		{% for quiz in quizzes %}
+			<p>{{ quiz.name }}</p>
+		{% endfor %}
 	</div>
 </body>
 </html>
