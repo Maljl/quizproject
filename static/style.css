@@ -1,6 +1,21 @@
 body {
     background-image: url(http://wallpapercave.com/wp/kSQdCxM.jpg);
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -134,9 +149,9 @@ li a:hover {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 180px;
+  font-size: 24px;
+  padding: 8px;
+  width: 160px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
