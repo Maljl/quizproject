@@ -4,17 +4,17 @@ quizzes = [
 	{
 		"quiz_number": 1,
    		"name": "SPACE",
-	   	"description": "Hur bra kan du dina klassiker?"
+	   	"description": "Hur bra kan du din rymd?"
 	},
 	{
 		"quiz_number": 2,
    	   	"name": "ROCKS",
-	   	"description": "Kan du dina lag?"
+	   	"description": "Vad kan du egentligen om stenar?"
 	},
 	{
 		"quiz_number": 3,
    	    "name": "STARS",
-	    "description": "Hackerhistoria är viktigt, kan du den?"	},
+	    "description": "Stjärnor är vackra, men vad kan du om dem?"	},
 ]
 
 def start(request):
@@ -27,6 +27,7 @@ def quiz(request, quiz_number):
 	context = {
 		"quiz": quizzes[int(quiz_number) -1],
 		"quiz_number": quiz_number,
+		"quizzes": quizzes,
 	}
 	return render(request, "quiz/quiz.html", context)
 
