@@ -14,10 +14,7 @@
 		<div class="container">
 			<div class="navbar-malin">
 			<ul>
-				<li><a class="a-start" href="{% url 'start_page' %}">Hem</a></li>
-				{% for quiz in quizzes %}
-				<li><a class="a-start" href="{% url "quiz_page" quiz.quiz_number %}">{{ quiz.name }}</a></li>
-				{% endfor %}
+				<li><a class="a-start" href="{% url 'start_page' %}">Home</a></li>
 			</ul>
 				
 			</div>
