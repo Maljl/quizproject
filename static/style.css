@@ -52,8 +52,9 @@ nav a:hover {
     opacity: 0.6;
     border-radius: 50%;
     height: 165px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 165px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .box1:hover {
@@ -64,51 +65,6 @@ nav a:hover {
     transition-timing-function: linear; 
     cursor: pointer;
 }
-
-.box2 {
-    background-color: #ff8000;
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    margin-left: 2px;
-    margin-right: 2px;
-    opacity: 0.6;
-    border-radius: 50%;
-    height: 165px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.box2:hover {
-    background-color: #ffbf80;
-    color: #804000;
-    transition-property: background-color;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: linear; 
-    cursor: pointer;
-}
-
-.box3 {
-    background-color: #ff8000;
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    margin-left: 2px;
-    margin-right: 2px;
-    opacity: 0.6;
-    border-radius: 50%;
-    height: 165px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.box3:hover {
-    background-color: #ffbf80;
-    color: #804000;
-    transition-property: background-color;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: linear; 
-    cursor: pointer;
-}
-
 
 .questions {
     text-align: center;
@@ -174,30 +130,21 @@ li a:hover {
 .quizknapp {
   display: inline-block;
   border-radius: 4px;
-  background-color: #a3c2c2;
+  background-color: #35c793;
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
-  width: 200px;
+  padding: 10px;
+  width: 180px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
 }
 .quizknapp2 {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #a3c2c2;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
   font-size: 15px;
   padding: 8px;
   width: 120px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
 }
 
 .quizknapp span {
@@ -231,9 +178,9 @@ li a:hover {
 
 
 .check:hover {
-    color: #a3c2c2;
+    color: #35c793;
     transition-property: color, text;
-    transition-duration: 0.3s, 0.3s;
+    transition-duration: 0.1s, 0.1s;
     transition-timing-function: linear; 
 }
 
@@ -243,6 +190,35 @@ input[type=radio]:checked + label span .check{
     color: #a3c2c2
 }
 
+input[type='radio'] {
+   -webkit-appearance: none; /*för att ta bort standarden*/
+}
 
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 2px;
+    left: -1px;
+    position: relative;
+    background-color: #35c793;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    }
 
 

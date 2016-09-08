@@ -15,8 +15,9 @@
 			<div class="navbar-malin">
 			<ul>
 				<li><a class="a-start" href="{% url 'start_page' %}">Hem</a></li>
-				<li><a class="a-start" href="#contact">Kontakt</a></li>
-				<li><a class="a-start" href="#about">Om</a></li>
+				{% for quiz in quizzes %}
+				<li><a class="a-start" href="{% url "quiz_page" quiz.quiz_number %}">{{ quiz.name }}</a></li>
+				{% endfor %}
 			</ul>
 				
 			</div>
