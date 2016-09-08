@@ -14,9 +14,9 @@
 		<div class="container">
 			<div class="navbar-malin">
 			<ul>
-				<li><a href="#home">Hem</a></li>
-				<li><a href="#contact">Kontakt</a></li>
-				<li><a href="#about">Om</a></li>
+				<li><a class="a-start" href="{% url 'start_page' %}">Hem</a></li>
+				<li><a class="a-start" href="#contact">Kontakt</a></li>
+				<li><a class="a-start" href="#about">Om</a></li>
 			</ul>
 				
 			</div>
@@ -33,8 +33,8 @@
 						<h1>{{ quiz.name }}</h1>
 						<p>{{ quiz.description }}</p>
 						<br>
-						<a href="question.html">
-						<button class="quizknapp" href="question.html" style="vertical-align: middle;"><span>STARTA</span></button></a>
+						<a href="{% url 'question_page' quiz_number 1 %}">
+						<button class="quizknapp" style="vertical-align: middle;"><span>STARTA</span></button></a>
 					</div>
 					<div class="col-md-3">
 					</div>

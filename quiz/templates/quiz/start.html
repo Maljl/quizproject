@@ -14,7 +14,7 @@
 		<div class="container">
 			<div class="navbar-malin">
 			<ul>
-				<li><a class="a-start" href="#home">Hem</a></li>
+				<li><a class="a-start" href="{% url 'start_page' %}">Hem</a></li>
 				<li><a class="a-start" href="#contact">Kontakt</a></li>
 				<li><a class="a-start" href="#about">Om</a></li>
 			</ul>
@@ -39,6 +39,7 @@
 			<div class="box1">
 				<h2>{{ quiz.name }}</h2>
 				<p>Detta quiz är <br>det enklaste</p>
+				<p><a href="{% url "quiz_page" quiz.quiz_number %}">{{ quiz.name }} </a></p>
 			</div>	
 			</div>
 			{% endfor %}

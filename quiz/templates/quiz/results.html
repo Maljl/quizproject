@@ -14,9 +14,9 @@
 		<div class="container">
 			<div class="navbar-malin">
 			<ul>
-				<li><a href="#home">Hem</a></li>
-				<li><a href="#contact">Kontakt</a></li>
-				<li><a href="#about">Om</a></li>
+				<li><a class="a-start" href="{% url 'start_page' %}">Hem</a></li>
+				<li><a class="a-start" href="#contact">Kontakt</a></li>
+				<li><a class="a-start" href="#about">Om</a></li>
 			</ul>
 				
 			</div>
@@ -34,7 +34,7 @@
 						<h1>{{ correct }} av {{ total }}</h1>
 						<p>Grattis, du tog dig igenom mitt quiz. Bra jobbat!</p>
 						<br>
-						<a href="start.html">
+						<a href="{% url 'start_page' %}">
 						<button class="quizknapp quizknapp2" style="vertical-align: middle;"><span>Nytt quiz</span></button></a>
 					</div>
 					<div class="col-md-3">
