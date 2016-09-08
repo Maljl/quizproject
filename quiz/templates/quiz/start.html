@@ -42,13 +42,13 @@
 		<div class="col-md-3">
 		</div>
 			{% for quiz in quizzes %}
+			<a href="{% url "quiz_page" quiz.quiz_number %}">
 			<div class="col-md-2">
 			<div class="box1">
 				<h2>{{ quiz.name }}</h2>
-				<p>Detta quiz är <br>det enklaste</p>
-				<p><a href="{% url "quiz_page" quiz.quiz_number %}">{{ quiz.name }} </a></p>
 			</div>	
 			</div>
+			</a>
 			{% endfor %}
 			</div>
 			</div>
