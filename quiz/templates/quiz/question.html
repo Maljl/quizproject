@@ -33,7 +33,7 @@
 							<h3>{{ question_number }}. {{ question }}</h3>
 							<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 							{% csrf_token %}
-							<input type="radio" name="answer" id="alternativ1" value="1">
+							<input type="radio" name="answer" id="alternativ1" value="1" checked>
 							<label for="alternativ1" class="check"><span></span> {{ answer1 }}</label><br>
 							<input type="radio" name="answer" id="alternativ2" value="2">
 							<label for="alternativ2" class="check"><span></span> {{ answer2 }}</label><br>
