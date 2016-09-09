@@ -20,7 +20,7 @@
 		<div class="container">
 			<div class="navbar-malin">
 			<ul>
-				<li><a class="a-start" href="{% url 'start_page' %}">Home</a></li>
+				<li><a class="a-start" href="{% url 'start_page' %}">HOME</a></li>
 				{% for quiz in quizzes %}
 				<li><a class="a-start" href="{% url "quiz_page" quiz.quiz_number %}">{{ quiz.name }}</a></li>
 				{% endfor %}
@@ -33,7 +33,7 @@
 	<div class="jumbotron jumbotron1">
 		<div class="container">
 		<h1>EPIC SPACE QUIZ</h1>
-		<p>Välj ett av quizen nedan</p>
+		<p>Välj ett tema nedan att testa dina kunskaper inom</p>
 		</div>
 	</div>
 
